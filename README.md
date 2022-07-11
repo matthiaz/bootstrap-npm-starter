@@ -25,7 +25,8 @@ Setup as a starter template, you can easily generate a new GitHub repository. Fr
 - Example stylesheet (`scss/starter.scss`) highlighting two ways to include and customize Bootstrap.
 - Example JavaScript file (`assets/js/starter.js`) showing how to import all of Bootstrap, or just the parts you need.
 
-## Usage
+
+## Usage Locally
 
 Be sure to have [Node.js](https://nodejs.org/) installed before proceeding.
 
@@ -53,6 +54,17 @@ npm start
 For the most straightforward development, open two Terminal tabs to execute `npm run server` and `npm run watch` at the same time.
 
 Open <http://localhost:3000> to see the page in action.
+
+## Deploy on Platform.Sh
+
+To start your own Project on Platform.Sh, click the button: 
+
+<a href="https://console.platform.sh/projects/create-project/?template=https://raw.githubusercontent.com/matthiaz/bootstrap-npm-starter/main/.platform/template-definition.yaml&utm_campaign=deploy_on_platform?utm_medium=button&utm_source=affiliate_links&utm_content=https://raw.githubusercontent.com/matthiaz/bootstrap-npm-starter/main/.platform/template-definition.yaml" target="_blank" title="Deploy with Platform.sh"><img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg"></a>
+
+The project that gets created will have a `.platform.app.yaml` file containing all information telling the infrastructure what has to be built and how to start. 
+
+Notice that we use `npm run psh-serve` to ensure that the server is listening to the correct port.
+
 
 ## Scripts
 

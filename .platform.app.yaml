@@ -1,0 +1,20 @@
+# The name of this application, which must be unique within a project.
+name: 'app'
+
+# The type key specifies the language and version for your application.
+type: 'nodejs:14'
+
+# The configuration of the application when it is exposed to the web.
+web:
+  commands:
+    start: "npm run psh-server"
+
+hooks:
+  build: |
+    set e
+    npm i
+
+    # Compile Sass
+    npm run css-compile
+
+disk: 512
